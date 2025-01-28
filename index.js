@@ -1,7 +1,7 @@
 import Express from "express"
 import cors from "cors"
 import mongoose from "mongoose"
-const currentDirectory = new URL('.', import.meta.url).pathname
+
 const app = Express()
 mongoose.connect("mongodb+srv:")
     .then(() => console.log("Connected to MongoDB"))
