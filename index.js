@@ -3,7 +3,7 @@ import cors from "cors"
 import mongoose from "mongoose"
 const currentDirectory = new URL('.', import.meta.url).pathname
 const app = Express()
-mongoose.connect("mongodb+srv://ramm:<>@cluster0.you54.mongodb.net/")
+mongoose.connect("mongodb+srv:")
     .then(() => console.log("Connected to MongoDB"))
     .catch((err) => console.error("MongoDB connection error:", err));
 app.use(cors({ origin: "*" }))
